@@ -1,7 +1,10 @@
-const ItemCount = () => {
+interface Props {
+  count: number;
+}
+const ItemCount = ({ count }: Props) => {
   return (
     <div>
-      <h1>ItemCount</h1>
+      <div>{count}</div>
     </div>
   );
 };
